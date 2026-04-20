@@ -112,12 +112,14 @@ h1 {
 
 .link-groups {
   display: grid;
-  gap: 20px;
+  gap: 14px;
   margin-top: 32px;
 }
 
 .link-group {
-  display: grid;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -128,12 +130,17 @@ h1 {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+}
+
+.links--inline {
+  gap: 10px;
 }
 
 .links a {
