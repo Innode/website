@@ -119,13 +119,14 @@ a {
   margin-top: 2px;
 }
 
-.link-group a + a::before {
+.link-item + .link-item::before {
   content: ", ";
   color: var(--muted);
 }
 
 .link-group__label,
 .links,
+.link-item,
 .links a {
   display: inline;
 }
