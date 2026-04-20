@@ -73,22 +73,26 @@ a {
 
 .intro {
   min-height: calc(100vh - 92px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0;
-  max-width: 720px;
+  display: grid;
+  align-content: center;
+  gap: 28px;
+  max-width: 760px;
   padding: 0 0 14vh;
 }
 
-.kicker,
-.copy {
+.copy,
+.service__title {
   margin: 0;
   color: var(--muted);
 }
 
-.kicker {
-  font-size: 0.76rem;
+.service {
+  display: grid;
+  gap: 14px;
+}
+
+.service__title {
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -96,23 +100,14 @@ a {
 
 .copy {
   max-width: 54ch;
-  margin-top: 0;
   font-size: clamp(0.98rem, 1.8vw, 1.08rem);
   line-height: 1.8;
 }
 
-.kicker + .copy {
-  margin-top: 18px;
-}
-
-.copy + .copy {
-  margin-top: 10px;
-}
-
 .link-groups {
   display: grid;
-  gap: 14px;
-  margin-top: 32px;
+  gap: 8px;
+  margin-top: 2px;
 }
 
 .link-group {
@@ -178,7 +173,6 @@ a {
     min-height: calc(100vh - 72px);
     padding-bottom: 10vh;
   }
-
 }
 
 @media (prefers-reduced-motion: reduce) {
