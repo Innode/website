@@ -140,9 +140,13 @@ a {
 
 .links a {
   color: var(--muted);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+  text-decoration-color: rgba(255, 255, 255, 0.18);
   transition:
     color 160ms ease,
-    transform 160ms ease;
+    text-decoration-color 160ms ease;
 }
 
 .link-group__label {
@@ -157,7 +161,7 @@ a {
 .links a:hover,
 .links a:focus-visible {
   color: var(--text);
-  transform: translateY(-1px);
+  text-decoration-color: rgba(255, 255, 255, 0.58);
 }
 
 @media (max-width: 720px) {
